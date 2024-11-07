@@ -4,7 +4,7 @@ body{
 }
 
 .banner__principal {
-    background-image: url("/assets/images/banner-programacion.jpg");
+    background-image: url("/assets/banner-programacion.jpg");
     /*background-color: rgb(43, 43, 43);*/
     background-size: cover;
     background-repeat: no-repeat; /* Evita que la imagen se repita */
