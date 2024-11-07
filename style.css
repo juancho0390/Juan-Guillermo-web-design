@@ -32,7 +32,8 @@ body{
     align-items: center;
     font-family: DotGothic16, 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     /*color: aliceblue;*/
-    color: rgb(99, 255, 56);
+    /*color: rgb(99, 255, 56);*/
+    color: aliceblue;
     font-size: larger;
     text-align: justify;
     
