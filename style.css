@@ -1,7 +1,33 @@
-body{
-    background-color: rgba(0, 0, 0, 0.966);
+/* body{
+    background-color: rgb(15, 0, 24);
     padding: 3% 10% 0 10%;
+} */
+
+
+body {
+    background-color: #0a192f;
+    background-image: radial-gradient(white 1px, transparent 1px);
+    background-size: 50px 50px;
+    animation: moveParticles 5s linear infinite;
+    padding: 3% 10% 0 10%;
+  }
+  
+  @keyframes moveParticles {
+    from { background-position: 0 0; }
+    to { background-position: 50px 50px; }
+  }
+
+
+  .img-icon, .img-proy {
+    filter: drop-shadow(4px 4px 5px rgba(0, 0, 0, 0.6));
 }
+
+.contenedor {
+    filter: drop-shadow(3px 4px 5px rgba(255, 255, 255, 0.5));
+}
+  
+
+
 
 /*Fuentes*/
 
@@ -199,7 +225,7 @@ h1 {
     }
 
     .text {
-        font-size: 7vw;
+        font-size: 6vw;
         text-align: center;
     }
 
@@ -227,14 +253,14 @@ h1 {
 
     .contenedor-iconos {
         height: auto;
-        background: linear-gradient(45deg, #ff0008, #4dff00);
+        /* background: linear-gradient(-45deg, #ff0008, #4dff0063); */
         box-shadow: 5px 5px 15px rgba(255, 255, 255, 0.8);
     }
 
     .contenedor-proyectos {
         height: auto;
         padding: 5%;
-        background: linear-gradient(-45deg, #ff0008, #4dff00);
+        /* background: linear-gradient(45deg, #000000, #40ff00); */
         box-shadow: 5px 5px 15px rgba(255, 255, 255, 0.8);
     }
 
@@ -253,6 +279,8 @@ h1 {
     .texto {
         font-size: 2.5vw;
     }
+
+    
 
     
 }
