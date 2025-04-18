@@ -1,6 +1,6 @@
 
 const words = [
-    { english: "¡Hola soy Juan!", spanish: "¡Hi i´m Juan!" },
+    { english: "¡Hola, soy Juan!", spanish: "¡Hi, i´m Juan!" },
     { english: "¡Bonjour, je suis Juan!", spanish: "¡Olá, eu sou o Juan!" },
     { english: "¡Hallo, ich bin Juan!", spanish: "¡Ciao, sono Juan!" }
 ];
@@ -42,11 +42,46 @@ function typeEffect() {
         if (charIndex === currentWord.length) {
             isErasing = true;
 
-            setTimeout(typeEffect, 1000); // Pausa tras completar la palabra
+            setTimeout(typeEffect, 3000); // Pausa tras completar la palabra
         } else {
-            setTimeout(typeEffect, 100); // Velocidad de escritura
+            setTimeout(typeEffect, 50); // Velocidad de escritura
         }
     }
 }
 
 typeEffect();
+
+
+
+const menuContainer = document.getElementById('menu-container');
+const opciones = document.getElementById('opciones');
+
+function mostrarOpciones() {
+    opciones.classList.toggle('show');
+}
+
+menuContainer.addEventListener('mouseleave', () => {
+    opciones.classList.remove('show');
+});
+
+
+
+
+
+const icono = document.getElementById("menu-container");
+
+    let intervaloTemblor = setInterval(() => {
+      if (!icono.matches(':hover')) { // Solo si NO está en hover
+        icono.classList.add("temblor");
+        setTimeout(() => {
+          icono.classList.remove("temblor");
+        }, 500);
+      }
+    }, 4000);
+
+
+
+
+function movimiento(elemento) {
+    document.getElementById(elemento).scrollIntoView({ behavior: 'smooth', block: "center" });
+}
