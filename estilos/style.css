@@ -55,6 +55,7 @@
     background-repeat: no-repeat;
     padding-right: 10%;
     padding-left: 10%;
+    max-width: 400px;
     
 }
 
@@ -184,12 +185,113 @@
     
 }
 
-.contenedor-iconos, .contenedor-proyectos  {
+.contenedor-competencias {
+    background: radial-gradient(circle, #ffffff, #000000 105%);
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.contenedor-proyectos  {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     align-items: center;
     text-align: center; 
     background: radial-gradient(circle, #ffffff, #000000 105%);
+    border-radius: 10px;
+    height: auto;
+    padding: 3% 0 3% 0;
+
+}
+
+.contenedor-contacto {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-left: 15%;
+    padding-right: 15%;
+}
+
+.figura {
+    max-width: 350px;
+}
+
+h2 {
+    color: rgb(255, 255, 255);
+    font-weight: 800;
+    font-size: 5vh;
+    font-family: oswald;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+.info-icon {
+    text-align: right;
+}
+
+
+
+.item {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    color: #fff;
+    background: linear-gradient(to right, #fd0000a9 50%, #1f1f1f 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    border: none;
+    cursor: pointer;
+    transition: all 0.4s ease;
+    border-radius: 8px;
+  }
+  
+  .item:hover {
+    background-position: left bottom;
+    color: #fff;
+}
+
+.formulario {
+    text-align: center;
+    justify-content: center;
+}
+
+
+
+.icon{
+    width: 50px;
+    height: 50px;
+}
+
+.info{
+    color: whitesmoke;
+    align-content: center;
+    text-align: left;
+    margin-left: 10%;
+    font-family: DotGothic16, 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.5vw;
+
+}
+
+.figura-accion {
+    text-align: center;
+    background-image: url("/assets/circuito2.png");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#texto{
+    justify-content: center;
+    text-align: justify;
+    align-items: center;
+    align-content: center;
+    margin-left: 5%;
+}
+
+.contenedor-iconos {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    text-align: center; 
+    /*background: radial-gradient(circle, #ffffff, #000000 105%);*/
     border-radius: 10px;
     height: auto;
     padding: 3% 0 3% 0;
@@ -332,6 +434,11 @@
     display: block;
   }
 
+  .sub-competencias{
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+}
+
 
 
 /*SECCION PARA MEDIAS QUERIES*/
@@ -370,9 +477,7 @@
         flex-direction: column;
     }
 
-    .contenedor-izquierda {
-        height: auto;
-    }
+    
 
     .contenedor-derecha {
         height: auto;

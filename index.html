@@ -25,8 +25,8 @@
             <div class="opcion" onclick="movimiento('titulo2')">Inicio</div>
             <div class="opcion" onclick="movimiento('contenedor-proyectos')">Proyectos</div>
             <div class="opcion">+ Proyectos</div>
-            <div class="opcion">Habilidades</div>
-            <div class="opcion">Contacto</div>
+            <div class="opcion" onclick="movimiento('contenedor-iconos')">Habilidades</div>
+            <div class="opcion" onclick="movimiento('figura-accion')">Contacto</div>
         </div>
       </div>
      
@@ -103,24 +103,73 @@
         <hr id="linea-horizontal">
     </div>
 
-    <div class="contenedor-izquierda">
-        <h1 class="titulo">Competencias</h1>
 
-        <div class="contenedor-iconos">
-            <div class="icono">
-                <img class="img-icon" src="assets/icons/html5.png" alt="">
+    <h1 class="titulo">Competencias</h1>
+    <div class="contenedor-competencias">
+        
+
+        <div class="sub-competencias">
+            <p class="texto" id="texto">
+                Mi experiencia en lenguajes y herramientas digitales 
+                me permite desarrollar soluciones web funcionales, eficientes 
+                y estratégicamente alineadas con los objetivos de cada proyecto. 
+                No me limito a crear sitios; diseño experiencias digitales que 
+                aportan valor real, integrando sólidas bases técnicas, una arquitectura 
+                bien definida y un enfoque centrado en el usuario.
+            </p>
+
+            <div class="contenedor-iconos" id="contenedor-iconos">
+                <div class="icono"><img class="img-icon" src="assets/icons/html5.png" alt=""></div>
+                <div class="icono"><img class="img-icon" src="assets/icons/js.png" alt=""></div>
+                <div class="icono"><img class="img-icon" src="assets/icons/css.png" alt=""></div>
+                <div class="icono"><img class="img-icon" src="assets/icons/azure.png" alt=""></div>
+                <div class="icono"><img class="img-icon" src="assets/icons/git.png" alt=""></div>
+                <div class="icono"><img class="img-icon" src="assets/icons/github.png" alt=""></div>
             </div>
-    
-            <div class="icono">
-                <img class="img-icon" src="assets/icons/js.png" alt="">
-            </div>
-    
-            <div class="icono">
-                <img class="img-icon" src="assets/icons/css.png" alt="">
-            </div>
+            
         </div>
 
+
+
+        
+
     </div>
+    <hr id="linea-horizontal">
+
+
+    <h1 class="titulo">Contacto</h1>
+    <div class="contenedor-contacto">
+        <div class="formulario">
+            <h2>Estamos a un mensaje de distancia, ¡hablemos!</h2>
+            <div class="sub-formulario">
+                <div class="item">
+                    <div class="info-icon">
+                        <img class="icon" src="/assets/icons/correo-electronico.png" alt="">
+                    </div>
+                    <div class="info" onclick="location.href='mailto:correo@ejemplo.com?subject=Estoy%20interesado&body=Hola,%20me%20gustaría%20saber%20más.'">juan.castano@dev.com</div>
+                </div>
+
+                <div class="item"><div class="info-icon">
+                    <img class="icon" src="/assets/icons/whatsapp.png" alt="">
+                </div>
+                <div class="info">
+                    <a style="text-decoration: none; color: white;" onclick="abrirWhatsapp()">+ 57 320 565 08 53</a>
+                </div>
+            </div>
+
+            </div>
+        </div>
+        <div class="figura-accion" id="figura-accion">
+            <img class="figura" src="assets/action.png" alt="">
+        </div>
+        
+
+
+
+        
+
+    </div>
+
     <hr id="linea-horizontal">
 
     <footer class="footer">

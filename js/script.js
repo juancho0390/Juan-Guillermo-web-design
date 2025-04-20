@@ -85,3 +85,9 @@ const icono = document.getElementById("menu-container");
 function movimiento(elemento) {
     document.getElementById(elemento).scrollIntoView({ behavior: 'smooth', block: "center" });
 }
+
+
+function abrirWhatsapp() {
+    const url = "https://wa.me/573205650853?text=%C2%A1Hola!%20Quiero%20un%20sitio%20web%20para%20mi%20negocio.";
+    window.open(url, '_blank');
+  }
