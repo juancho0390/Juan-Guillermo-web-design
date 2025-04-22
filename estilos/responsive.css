@@ -1,0 +1,57 @@
+@media (max-width: 480px) {
+
+    .seccion-boton-flotante {
+        display: none;
+    }
+
+    body {
+        padding: 5% 0 0 0;
+    }
+
+    .seccion3, .seccion4, .seccion5, .seccion6 {
+        display: none;
+    }
+
+    
+
+    .contenedor-banner {
+        max-height: 100px;
+    }
+
+    #dynamicText {
+        font-size: 5vh;
+        padding-left: 8%;
+    }
+
+    .cargo {
+        align-content: center;
+        max-height: 4vh;
+    }
+
+    .contenedor__central {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .persona {
+        border-radius: 50%;
+        max-width: 25vh;
+    }
+
+    .contenedor-texto {
+        margin: 0;
+        text-align: center;
+    }
+
+    .texto {
+        margin-left: 5%;
+        margin-right: 5%;
+        font-size: 2vh;
+    }
+
+    .firma {
+        font-size: 6vh;
+    }
+
+    
+}

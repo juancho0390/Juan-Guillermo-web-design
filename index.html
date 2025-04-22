@@ -7,102 +7,108 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Juan Guillermo Desarrollador Web</title>
     <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/responsive.css">
+
     
 </head>
 
 <body>
     
 
-    <div class="menu-container" id="menu-container" onclick="mostrarOpciones()">
-        <button class="menu-button" >
-            <div class="icono-boton"></div>
-            <div class="titulo-boton">Menu</div>
-        </button>
-
-        <div id="opciones" class="opciones">
-            <div class="opcion" onclick="movimiento('titulo2')">Inicio</div>
-            <div class="opcion" onclick="movimiento('contenedor-proyectos')">Proyectos</div>
-            <div class="opcion">+ Proyectos</div>
-            <div class="opcion" onclick="movimiento('contenedor-iconos')">Habilidades</div>
-            <div class="opcion" onclick="movimiento('figura-accion')">Contacto</div>
-        </div>
-      </div>
+    <section class="seccion-boton-flotante">
+        <div class="menu-container" id="menu-container" onclick="mostrarOpciones()">
+            <button class="menu-button" >
+                <div class="icono-boton"></div>
+                <div class="titulo-boton">Menu</div>
+            </button>
+    
+            <div id="opciones" class="opciones">
+                <div class="opcion" onclick="movimiento('titulo2')">Inicio</div>
+                <div class="opcion" onclick="movimiento('contenedor-proyectos')">Proyectos</div>
+                <div class="opcion">+ Proyectos</div>
+                <div class="opcion" onclick="movimiento('contenedor-iconos')">Habilidades</div>
+                <div class="opcion" onclick="movimiento('figura-accion')">Contacto</div>
+            </div>
+          </div>
+    </section>
      
     
-    <div class="contenedor-banner">
-        <div class="contenedor-dynamic">
-            <div class="text" id="dynamicText"></div>
-        </div>
-        <div class="cargo">D e s a r r o l l a d o r&nbsp;&nbsp;&nbsp;&nbsp;F r o n t - E n d</div>
-        
-    </div>
-    
-
-    <div class="contenedor__central">
-        <img class="persona" src="assets/persona.webp" alt="">
-
-        
-
-        <div class="contenedor-texto">
+    <section class="seccion-banner">
+        <div class="contenedor-banner">
+            <div class="contenedor-dynamic">
+                <div class="text" id="dynamicText"></div>
+            </div>
+            <div class="cargo">D e s a r r o l l a d o r&nbsp;&nbsp;&nbsp;&nbsp;F r o n t - E n d</div>
             
-            <div class="titulo2" id="titulo2">Hola, soy Juan</div>
-            <p class="texto">
-                Soy desarrollador web front-end, especializado en crear interfaces de usuario intuitivas y atractivas que funcionan de
-                manera fluida en cualquier dispositivo. Me enfoco en brindar experiencias de usuario sobresalientes mediante un dominio
-                sólido de tecnologías de desarrollo. 
-                <br><br>
-                Mi trabajo se centra en optimizar el rendimiento, asegurar la accesibilidad 
-                y construir productos visualmente impactantes que ayudan a cumplir objetivos comerciales.
-            </p>
-    
-            <div class="firma">
-                Juan Guillermo C.
-            </div>
         </div>
-    </div>
+    </section>
+    
+    <section class="seccion2">
+        <div class="contenedor__central">
+            <img class="persona" src="assets/persona.webp" alt="">
 
-    <hr id="linea-horizontal">
-
-
-    <div class="contenedor3" id="contenedor3">
-
-        <div class="contenedor-derecha">
-            <h1 class="titulo" id="titulo3">Proyectos</h1>
-
-            <div class="contenedor-proyectos" id="contenedor-proyectos">
-                <div class="icono-proy">
-                    
-                    <a href="https://juancho0390.github.io/ServiciosUNAD/paginas/temario.html">
-                        <img class="img-proy" src="assets/captura-UNAD.jpg" alt="">
-                    </a>
-                    
-                </div>
-        
-                <div class="icono-proy">
-                    
-                    <a href="https://juancho0390.github.io/Barber-Shop/">
-                        <img class="img-proy" src="assets/DeerBarber.jpg" alt="">
-                    </a>
-                    
-                </div>
-
-                <div class="icono-proy">
-                    
-                    <a href="https://juancho0390.github.io/Patitas_Felices/">
-                        <img class="img-proy" src="assets/captura-Patitas Felices.jpg" alt="">
-                    </a>
-                    
-                </div>
+            <div class="contenedor-texto">
                 
+                <div class="titulo2" id="titulo2">Hola, soy Juan</div>
+                <p class="texto">
+                    Soy desarrollador web front-end, especializado en crear interfaces de usuario intuitivas y atractivas que funcionan de
+                    manera fluida en cualquier dispositivo. Me enfoco en brindar experiencias de usuario sobresalientes mediante un dominio
+                    sólido de tecnologías de desarrollo. 
+                    <br><br>
+                    Mi trabajo se centra en optimizar el rendimiento, asegurar la accesibilidad 
+                    y construir productos visualmente impactantes que ayudan a cumplir objetivos comerciales.
+                </p>
+        
+                <div class="firma">
+                    Juan Guillermo C.
+                </div>
             </div>
-
         </div>
 
         <hr id="linea-horizontal">
-    </div>
+    </section>
 
+    <section class="seccion3">
+        <div class="contenedor3" id="contenedor3">
 
-    <h1 class="titulo">Competencias</h1>
+            <div class="contenedor-derecha">
+                <h1 class="titulo" id="titulo3">Proyectos</h1>
+    
+                <div class="contenedor-proyectos" id="contenedor-proyectos">
+                    <div class="icono-proy">
+                        
+                        <a href="https://juancho0390.github.io/ServiciosUNAD/paginas/temario.html">
+                            <img class="img-proy" src="assets/captura-UNAD.jpg" alt="">
+                        </a>
+                        
+                    </div>
+            
+                    <div class="icono-proy">
+                        
+                        <a href="https://juancho0390.github.io/Barber-Shop/">
+                            <img class="img-proy" src="assets/DeerBarber.jpg" alt="">
+                        </a>
+                        
+                    </div>
+    
+                    <div class="icono-proy">
+                        
+                        <a href="https://juancho0390.github.io/Patitas_Felices/">
+                            <img class="img-proy" src="assets/captura-Patitas Felices.jpg" alt="">
+                        </a>
+                        
+                    </div>
+                    
+                </div>
+    
+            </div>
+    
+            <hr id="linea-horizontal">
+        </div>
+    </section>
+
+    <section class="seccion4">
+        <h1 class="titulo">Competencias</h1>
     <div class="contenedor-competencias">
         
 
@@ -132,10 +138,13 @@
         
 
     </div>
+
     <hr id="linea-horizontal">
 
+    </section>
 
-    <h1 class="titulo">Contacto</h1>
+    <section class="seccion5">
+        <h1 class="titulo">Contacto</h1>
     <div class="contenedor-contacto">
         <div class="formulario">
             <h2>Estamos a un mensaje de distancia, ¡hablemos!</h2>
@@ -160,25 +169,21 @@
         <div class="figura-accion" id="figura-accion">
             <img class="figura" src="assets/action.png" alt="">
         </div>
-        
-
-
-
-        
-
     </div>
-
     <hr id="linea-horizontal">
+    </section>
 
-    <footer class="footer">
-        <div class="footer-izq">
-            <img class="send-icon" src="assets/icons/paper-plane.png" alt=""> juan.castano@dev.com
-        </div>
-        <div>© 2025  Todos los derechos reservados.</div>
-        <div><a style="text-decoration: none; color: white;" href="https://juancho0390.github.io/Juan-Guillermo-web-design/">Diseñado: Guillermo Castaño</a>
-        </div>
-        
-    </footer>
+    <section class="seccion6">
+        <footer class="footer">
+            <div class="footer-izq">
+                <img class="send-icon" src="" alt=""> juan.castano@dev.com
+            </div>
+            <div>© 2025  Todos los derechos reservados.</div>
+            <div><a style="text-decoration: none; color: white;" href="https://juancho0390.github.io/Juan-Guillermo-web-design/">Diseñado: Guillermo Castaño</a>
+            </div>
+            
+        </footer>
+    </section>
     
 </body>
 
