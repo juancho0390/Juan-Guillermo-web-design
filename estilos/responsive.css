@@ -8,12 +8,6 @@
         padding: 5% 0 0 0;
     }
 
-    .seccion3, .seccion4, .seccion5, .seccion6 {
-        display: none;
-    }
-
-    
-
     .contenedor-banner {
         max-height: 100px;
     }
@@ -25,7 +19,8 @@
 
     .cargo {
         align-content: center;
-        max-height: 4vh;
+        max-height: 5vh;
+        font-size: 2.2vh;
     }
 
     .contenedor__central {
@@ -35,12 +30,13 @@
 
     .persona {
         border-radius: 50%;
-        max-width: 25vh;
+        max-width: 22vh;
     }
 
     .contenedor-texto {
         margin: 0;
         text-align: center;
+        margin-bottom: 3%;
     }
 
     .texto {
@@ -53,5 +49,46 @@
         font-size: 6vh;
     }
 
+    .contenedor-proyectos {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 2%;
+        padding-bottom: 50px;
+    }
+
+    .sub-competencias {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .contenedor-contacto {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .figura-accion {
+        display: none;
+    }
+
+    h2 {
+        font-size: 3vh;
+    }
+
+    .titulo {
+        font-size: 4vh;
+    }
+
+    .info {
+        font-size: 2.3vh;
+    }
+
+    .footer {
+        display: grid;
+        grid-template-columns: 1fr;
+        font-size: 1.8vh;
+        margin-top: 10%;
+    }
+
     
+
 }

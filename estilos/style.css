@@ -12,15 +12,6 @@
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
   }
-  
-
-
- 
-  
-  @keyframes moveParticles {
-    from { background-position: 0 0; }
-    to { background-position: 50px 50px; }
-  }
 
 
   .img-icon, .img-proy {
@@ -329,7 +320,7 @@ h2 {
     grid-template-columns: 1fr 1fr 1fr;
     place-items: center;
     font-size: 1.8vh;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: dev, 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-weight: bold;
     text-align: center;
 }
@@ -456,67 +447,3 @@ h2 {
     75%     { transform: rotate(-15deg); }
     100%    { transform: rotate(15deg) }
   }
-
-
-
-
-
-  /*MEDIAS QUERIES*/
-
-  @media (max-width: 768px) {
-
-    .seccion-boton-flotante {
-        display: none;
-    }
-
-    body {
-        padding: 5% 0 0 0;
-    }
-
-    .seccion3, .seccion4, .seccion5, .seccion6 {
-        display: none;
-    }
-
-    
-
-    .contenedor-banner {
-        max-height: 100px;
-    }
-
-    #dynamicText {
-        font-size: 5vh;
-        padding-left: 8%;
-    }
-
-    .cargo {
-        align-content: center;
-        max-height: 4vh;
-    }
-
-    .contenedor__central {
-        display: grid;
-        grid-template-columns: 1fr;
-    }
-
-    .persona {
-        border-radius: 50%;
-        max-width: 25vh;
-    }
-
-    .contenedor-texto {
-        margin: 0;
-        text-align: center;
-    }
-
-    .texto {
-        margin-left: 5%;
-        margin-right: 5%;
-        font-size: 2vh;
-    }
-
-    .firma {
-        font-size: 6vh;
-    }
-
-    
-}
